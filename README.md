@@ -1,12 +1,12 @@
 indie.css is a simple, minimal, classless* CSS stylesheet to make your site or app look good.
 
-[Download] | [Goals] | [Alternatives] | [Who]
+[Download](#download) | [Goals](#goals) | [Customizing](#customizing) | [Alternatives](#alternatives) | [Who](#who)
 
-it's designed for indie developers who need to ship fast.
+It's designed for indie developers who need to ship fast.
 
-it strikes a balance between simplicity and customizeability with a handful of CSS vars
+It strikes a balance between simplicity and customizeability with a handful of CSS vars.
 
-* Note: some of the layout rules use optional classes.
+* Note: some of the extended functionality rules (layout and inputs) use some optional classes.
 
 ### Download
 
@@ -22,6 +22,37 @@ it strikes a balance between simplicity and customizeability with a handful of C
 - No tailwind or dependencies
 - Customizeable with a handful of CSS vars
 - Separate styles for typography, HTML form inputs, and layout.
+
+### Utility classes
+
+indie.css ships with a small number of utility classes for common layouts and coloration.
+
+### Customizing
+
+indie.css is designed to be easy to customize with CSS vars.
+
+You can simply override these vars with your own additional stylesheet, or an inline `<style>` tag.
+
+In dark mode the `--fg` and `--bg` variables should be swapped.
+
+```
+:root {
+  --fg: #191817;
+  --bg: #F2F0EB;
+  --highlight: #F2F0EB;
+  /* --highlight: #00666D; */
+  /* --highlight: #BBB645; */
+  --font: Arial, Inter, Helvetica, sans-serif;
+  --font-h: Arial, Inter, Helvetica, sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --fg: #F2F0EB;
+    --bg: #191817;
+  }
+}
+```
 
 ### Alternatives
 
