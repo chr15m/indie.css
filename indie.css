@@ -1,5 +1,18 @@
 /*** variables ***/
 
+/* TODO:
+ * Fix header sizes.
+ * Re-order HTML.
+ * Combine README to make index in doc.
+ * Most common stuff at the top of the reference and "full HTML reference" below.
+ * Loading spinner.
+ * fix too-wide inputs
+ * add additional style for inputs defaults
+ * add "shade" to use instead of dotted lines (maybe?)
+ * fix broken image
+ * */
+
+
 :root {
   --fg: #191817;
   --bg: #F2F0EB;

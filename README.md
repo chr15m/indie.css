@@ -10,10 +10,7 @@ It strikes a balance between simplicity and customizeability with a handful of C
 
 ### Download
 
-- indie.css (Xkb)
-- indie-inputs.css (Xkb)
-- indie-layout.css (Xkb)
-- indie.min.css - everything combined and minified (Xkb)
+<a href="indie.css"><button>indie.css (Xkb)</button></a>
 
 ### Goals
 
@@ -32,6 +29,8 @@ indie.css ships with a small number of utility classes for common layouts and co
 indie.css is designed to be easy to customize with CSS vars.
 
 You can simply override these vars with your own additional stylesheet, or an inline `<style>` tag.
+
+Of course you can also copy the stylesheet to your own project and add to it as you like.
 
 In dark mode the `--fg` and `--bg` variables should be swapped.
 
