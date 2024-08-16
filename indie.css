@@ -1,12 +1,15 @@
 :root {
-  --fg: #111;
-  --bg: #fff;
+  --fg: #191817;
+  --bg: #F2F0EB;
+  --highlight: #00666D;
+  --font: Arial, Inter, Helvetica, sans-serif;
+  --font-h: Arial, Inter, Helvetica, sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --fg: #fff;
-    --bg: #111;
+    --fg: #F2F0EB;
+    --bg: #191817;
   }
 }
 
@@ -24,7 +27,7 @@ body {
   margin: 0; 
   background: var(--bg); 
   color: var(--fg); 
-  font-family: Helvetica, Arial, sans-serif; 
+  font-family: var(--font);
 }
 
 a {
@@ -65,6 +68,10 @@ body > header {
   padding-top: 8rem; 
   padding-bottom: 8rem; 
   font-size: 1.2em; 
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-h);
 }
 
 h1 { font-size: 2em; }
@@ -152,7 +159,7 @@ select {
   background-color: var(--bg); 
   border: .1rem solid var(--fg); 
   border-radius: 0; 
-  font-family: Helvetica, Arial, sans-serif; 
+  font-family: var(--font); 
 }
 
 fieldset, input, select, textarea {
