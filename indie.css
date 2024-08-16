@@ -1,7 +1,11 @@
+/*** variables ***/
+
 :root {
   --fg: #191817;
   --bg: #F2F0EB;
-  --highlight: #00666D;
+  --highlight: #F2F0EB;
+  /* --highlight: #00666D; */
+  /* --highlight: #BBB645; */
   --font: Arial, Inter, Helvetica, sans-serif;
   --font-h: Arial, Inter, Helvetica, sans-serif;
 }
@@ -13,61 +17,52 @@
   }
 }
 
+/*** Page defaults ***/
+
 html {
-  font-size: 1.25rem; 
-  box-sizing: border-box; 
+  font-size: 1.25rem;
+  box-sizing: border-box;
 }
 
 *, ::after, ::before {
-  box-sizing: inherit; 
-  text-decoration-thickness: .1rem; 
+  box-sizing: inherit;
+  text-decoration-thickness: .1rem;
 }
 
 body {
-  margin: 0; 
-  background: var(--bg); 
-  color: var(--fg); 
+  margin: 0;
+  padding: 1em;
+  background: var(--bg);
+  color: var(--fg);
   font-family: var(--font);
 }
+
+/**************
+ * Typography *
+ **************/
 
 a {
   color: var(--fg);
 }
 
 figure {
-  margin: 0; 
+  margin: 0;
 }
 
 figcaption {
-  text-align: right; 
-  font-size: 0.8em; 
-  border-bottom: .2rem solid var(--fg); 
-  padding-bottom: .2rem; 
+  text-align: right;
+  font-size: 0.8em;
+  border-bottom: .2rem solid var(--fg);
+  padding-bottom: .2rem;
 }
 
 img {
-  max-width: 100%; 
-  height: auto; 
+  max-width: 100%;
+  height: auto;
 }
 
 main section + section {
   padding: 2rem 0;
-}
-
-body > header,
-body > main,
-body > footer {
-  margin: auto; 
-  max-width: 660px; 
-  padding-left: 10px; 
-  padding-right: 10px; 
-  width: 100%; 
-}
-
-body > header {
-  padding-top: 8rem; 
-  padding-bottom: 8rem; 
-  font-size: 1.2em; 
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -81,35 +76,6 @@ h4 { font-size: 1.00em; }
 h5 { font-size: 0.83em; }
 h6 { font-size: 0.67em; }
 
-footer {
-  text-align: center;
-}
-
-button,
-input[type="button"],
-input[type="reset"],
-input[type="submit"] {
-  display: inline-block; 
-  vertical-align: middle; 
-  padding: .2rem .5rem; 
-  font-size: 1rem; 
-  font-weight: normal; 
-  margin-bottom: .5rem; 
-  background: var(--bg); 
-  color: var(--fg); 
-  border: .1rem solid var(--fg); 
-  border-radius: 0; 
-  cursor: pointer; 
-}
-
-button:disabled,
-input[type="button"]:disabled,
-input[type="reset"]:disabled,
-input[type="submit"]:disabled{
-  border-style: dashed; 
-  cursor: not-allowed;  
-}
-
 ul {
   list-style: square;
 }
@@ -119,63 +85,18 @@ nav {
 }
 
 nav ul {
-  padding: 0; 
-  list-style: none; 
+  padding: 0;
+  list-style: none;
 }
 
 nav ul li {
-  margin: 0 .2rem; 
-  display: inline-block; 
-}
-
-fieldset {
-  border: .1rem solid var(--fg);
-}
-
-label, legend {
-  display: block; 
-  font-weight: bold; 
-  margin-bottom: .4rem; 
-}
-
-input[type="email"],
-input[type="number"],
-input[type="password"],
-input[type="search"],
-input[type="tel"],
-input[type="text"],
-input[type="url"],
-textarea,
-select {
-  -webkit-appearance: none; 
-  -moz-appearance: none; 
-  appearance: none; 
-  box-shadow: none; 
-  box-sizing: inherit; 
-  padding: .2rem .5rem; 
-  width: 100%; 
-  font-size: 1rem; 
-  color: var(--fg); 
-  background-color: var(--bg); 
-  border: .1rem solid var(--fg); 
-  border-radius: 0; 
-  font-family: var(--font); 
-}
-
-fieldset, input, select, textarea {
-  margin: 0 0 .8rem 0;
-}
-
-input::placeholder,
-textarea::placeholder {
-  color: var(--fg); 
-  font-style: italic; 
-  opacity: 1;
+  margin: 0 .2rem;
+  display: inline-block;
 }
 
 table {
-  width: 100%; 
-  border-spacing: 0; 
+  width: 100%;
+  border-spacing: 0;
 }
 
 td, th {
@@ -191,8 +112,8 @@ td:last-child, th:last-child {
 }
 
 th {
-  border-bottom: .1rem solid var(--fg); 
-  text-align: left; 
+  border-bottom: .1rem solid var(--fg);
+  text-align: left;
 }
 
 td {
@@ -200,36 +121,114 @@ td {
 }
 
 blockquote, pre {
-  margin-left: 0; 
-  margin-right: 0; 
-  padding: .5rem .8rem; 
-  border-left: .1rem solid var(--fg); 
-  overflow-y: hidden; 
+  margin-left: 0;
+  margin-right: 0;
+  padding: .5rem .8rem;
+  border-left: .1rem solid var(--fg);
+  overflow-y: hidden;
 }
 
 pre {
-  border: .05rem dotted var(--fg); 
-  border-left: .1rem solid var(--fg); 
+  border: .05rem dotted var(--fg);
+  border-left: .1rem solid var(--fg);
 }
 
 pre > code {
-  white-space: pre; 
-  display: block; 
-  font-size: .8rem; 
+  white-space: pre;
+  display: block;
+  font-size: .8rem;
+}
+
+hr {
+  border: .05rem solid var(--fg);
+}
+
+/********************
+ * HTML form inputs *
+ ********************/
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  display: inline-block;
+  vertical-align: middle;
+  padding: .2rem .5rem;
+  font-size: 1rem;
+  font-weight: normal;
+  margin-bottom: .5rem;
+  background: var(--bg);
+  color: var(--fg);
+  border: .1rem solid var(--fg);
+  border-radius: 0;
+  cursor: pointer;
+}
+
+button:disabled,
+input[type="button"]:disabled,
+input[type="reset"]:disabled,
+input[type="submit"]:disabled{
+  border-style: dashed;
+  cursor: not-allowed;
+}
+
+fieldset {
+  border: .1rem solid var(--fg);
+}
+
+label, legend {
+  display: block;
+  font-weight: bold;
+  margin-bottom: .4rem;
+}
+
+input[type="email"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="url"],
+textarea,
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  box-shadow: none;
+  box-sizing: inherit;
+  padding: .2rem .5rem;
+  width: 100%;
+  font-size: 1rem;
+  color: var(--fg);
+  background-color: var(--bg);
+  border: .1rem solid var(--fg);
+  border-radius: 0;
+  font-family: var(--font);
+}
+
+fieldset, input, select, textarea {
+  margin: 0 0 .8rem 0;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--fg);
+  font-style: italic;
+  opacity: 1;
 }
 
 progress {
-  -moz-appearance: none; 
-  -webkit-appearance: none; 
-  display: block; 
-  height: .5rem; 
-  overflow: hidden; 
-  padding: 0; 
-  width: 100%; 
-  background: var(--bg); 
-  color: var(--fg); 
-  border: .1rem solid var(--fg); 
-  border-radius: 0; 
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  display: block;
+  height: .5rem;
+  overflow: hidden;
+  padding: 0;
+  width: 100%;
+  background: var(--bg);
+  color: var(--fg);
+  border: .1rem solid var(--fg);
+  border-radius: 0;
 }
 
 progress::-webkit-progress-bar {
@@ -244,6 +243,24 @@ progress::-moz-progress-bar {
   background-color: var(--fg);
 }
 
-hr {
-  border: .05rem solid var(--fg);
+/**********
+ * Layout *
+ **********/
+
+body > header,
+body > main,
+body > footer {
+  margin: auto;
+  max-width: 660px;
+  width: 100%;
+}
+
+body > header {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  font-size: 1.2em;
+}
+
+footer {
+  text-align: center;
 }
