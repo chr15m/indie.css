@@ -1,3 +1,5 @@
+** 🚧 Work in progress. I'm dogfooding this until it's ready for you. **
+
 indie.css is a simple, minimal, classless* CSS stylesheet to make your site or app look good.
 
 [Download](#download) | [Goals](#goals) | [Customizing](#customizing) | [Alternatives](#alternatives) | [Who](#who)
