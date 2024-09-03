@@ -64,3 +64,5 @@ there are a large number of similar stylesheets. None of these met the criteria 
 ### Who
 
 indie.css is built by [Chris McCormick](https://mccormick.cx).
+
+indie.css is a fork of [concrete.css](https://concrete.style/).
