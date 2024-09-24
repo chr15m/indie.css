@@ -6,7 +6,6 @@
  * Default body should not be 800px.
  * Combine README to make index in doc.
  * Most common stuff at the top of the reference and "full HTML reference" below.
- * Loading spinner.
  * fix too-wide inputs
  * add additional style for inputs defaults
  * add "shade" to use instead of dotted lines (maybe?)
@@ -283,4 +282,27 @@ body > header {
 
 footer {
   text-align: center;
+}
+
+/*** Utilities ***/
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader div {
+  animation: spin 0.33s linear infinite;
+  width: 48px;
+  height: 48px;
+  border-radius: 24px;
+  border: 3px solid transparent;
+  border-left: 3px solid silver;
+  border-right: 3px solid silver;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
