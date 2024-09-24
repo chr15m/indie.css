@@ -157,6 +157,12 @@ hr {
   border: .05rem solid var(--fg);
 }
 
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
 /********************
  * HTML form inputs *
  ********************/
