@@ -6,7 +6,6 @@
  * Default body should not be 800px.
  * Combine README to make index in doc.
  * Most common stuff at the top of the reference and "full HTML reference" below.
- * fix too-wide inputs
  * add additional style for inputs defaults
  * add "shade" to use instead of dotted lines (maybe?)
  * fix broken image
@@ -193,6 +192,42 @@ input[type="submit"]:disabled{
   cursor: not-allowed;
 }
 
+input[type="checkbox"] {
+  appearance: none;
+  cursor: pointer;
+  color: var(--fg);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.5em;
+  height: 1.5em;
+  border: .1rem solid var(--fg);
+  border-radius: var(--radius);
+  margin: 0px 0.25em;
+  display: inline-block;
+}
+
+input[type="checkbox"]:checked {
+  /* appearance: none;
+  accent-color: var(--fg); */
+  color: var(--bg);
+  background-color: var(--fg);
+  font-weight: bold;
+}
+
+input[type="checkbox"]:after {
+  display: inline-flex;
+  content: " ";
+  justify-content: center;
+  align-items: center;
+  width: 1.25em;
+  height: 1.25em;
+}
+
+input[type="checkbox"]:checked:after {
+  content: "x";
+}
+
 fieldset {
   border: .1rem solid var(--fg);
 }
@@ -218,7 +253,6 @@ select {
   box-shadow: none;
   box-sizing: inherit;
   padding: .2rem .5rem;
-  width: 100%;
   font-size: 1rem;
   color: var(--fg);
   background-color: var(--bg);
