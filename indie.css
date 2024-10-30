@@ -2,15 +2,14 @@
 
 /* TODO:
  * Fix header sizes.
- * Re-order HTML.
- * Default body should not be 800px.
+ * Figure out how to handle body > footer/header/main layout
  * Combine README to make index in doc.
  * Most common stuff at the top of the reference and "full HTML reference" below.
+ * Re-order HTML.
  * add additional style for inputs defaults
  * add "shade" to use instead of dotted lines (maybe?)
- * fix broken image
+ * fix broken image in preview page.
  * */
-
 
 :root {
   --fg: #191817;
