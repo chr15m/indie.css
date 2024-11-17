@@ -1,7 +1,7 @@
 {
   "name": "indie.css",
   "version": "0.0.1",
-  "description": "simple, minimal, classless stylesheet to make your site or app look good",
+  "description": "Stylesheet for indie devs. Simple, minimal, classless.",
   "keywords": ["css", "design", "prototyping", "mvp", "indie"],
   "author": "Chris McCormick <chris@mccormick.cx>",
   "license": "MIT"
