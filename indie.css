@@ -203,7 +203,6 @@ input[type="checkbox"] {
   border: .1rem solid var(--fg);
   border-radius: var(--radius);
   margin: 0px 0.25em;
-  display: inline-block;
 }
 
 input[type="checkbox"]:checked {
@@ -244,6 +243,7 @@ input[type="search"],
 input[type="tel"],
 input[type="text"],
 input[type="url"],
+input,
 textarea,
 select {
   -webkit-appearance: none;
