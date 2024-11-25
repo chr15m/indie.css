@@ -5,16 +5,83 @@
   <title>indie.css</title>
   <meta charset="utf-8">
   <link rel="stylesheet" href="indie.css">
-  <!-- description: (take from readme) -->
 </head>
 
-<body>
+<body class="page">
   <header role="banner">
     <h1>indie.css</h1>
+    <p>indie.css is a simple, minimal, classless* CSS stylesheet to make your site or app look good.</p>
     <small>Jump to: <a href="#headings">Headings</a> | <a href="#sections">Sections</a> | <a href="#phrasing">Phrasing</a> | <a href="#palpable">Palpable Content</a> | <a href="#embeds">Embeds</a> | <a href="#forms">Forms</a> | <a href="#tables">Tables</a> </small>    <br><br>
-    <p>This section serves as the <code>header</code>.</p>
   </header>
-  <hr>
+
+  <h2>Quick demo</h2>
+
+  <fieldset>
+    <legend>Some inputs</legend>
+
+    <p>
+    <label for="example-input-text">An input</label><br/>
+      <input id="example-input-text" type="text" placeholder="Enter some text here">
+    </p>
+
+    <p>
+      <label for="example-input-password">A password field</label></br>
+      <input id="example-input-password" type="password" placeholder="Password">
+    </p>
+
+    <p>
+      <label for="example-textarea">A textarea</label><br/>
+      <textarea id="example-textarea" rows="3"></textarea>
+    </p>
+
+    <p>
+      <label for="example-select1">A select input</label>
+      <select id="example-select1">
+        <option>one</option>
+        <option>two</option>
+        <option>three</option>
+        <option>seventeen</option>
+      </select>
+    </p>
+
+    <p>
+      <div>
+        <label>
+          <input id="optionsR-radios1" type="radio" name="options-radios" value="option1" checked="">
+          Option one.
+        </label>
+      </div>
+
+      <div>
+        <label>
+          <input id="options-radios2" type="radio" name="options-radios" value="option2">
+          Option two.
+        </label>
+      </div>
+    </p>
+
+    <p>
+      <div>
+        <label>
+          <input type="checkbox" id="ch1">
+          Checkbox one.
+        </label>
+      </div>
+
+      <div>
+        <label>
+          <input type="checkbox" id="ch2">
+          Checkbox two.
+        </label>
+      </div>
+    </p>
+
+    <p>
+      <button>A button</button>
+      <input type="button" value="A button"/>
+    </p>
+  </fieldset>
+
   <main>
     <section id="headings">
       <h3><a href="#headings">#</a> Headings </h3>
@@ -170,8 +237,8 @@ United States
       </dl>
       <p><code>figure</code>:</p>
       <figure>
-        <img src="http://placekitten.com/200/300">
-        <figcaption>Figure 1: A picture of a kitten from <a href="http://placekitten.com/200/300/">placekitten.com</a>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Bridgetown_landscape.jpg/1920px-Bridgetown_landscape.jpg">
+        <figcaption>Figure 1: A typical rural landscape in the vicinity of Bridgetown.</a>
         </figcaption>
       </figure>
 
