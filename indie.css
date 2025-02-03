@@ -191,7 +191,8 @@ input[type="submit"]:disabled{
   cursor: not-allowed;
 }
 
-input[type="checkbox"] {
+input[type="checkbox"],
+input[type="radio"] {
   appearance: none;
   cursor: pointer;
   color: var(--fg);
@@ -203,17 +204,22 @@ input[type="checkbox"] {
   border: .1rem solid var(--fg);
   border-radius: var(--radius);
   margin: 0px 0.25em;
+  position: relative;
 }
 
-input[type="checkbox"]:checked {
-  /* appearance: none;
-  accent-color: var(--fg); */
+input[type="radio"] {
+  border-radius: 50%;
+}
+
+input[type="checkbox"]:checked,
+input[type="radio"]:checked {
   color: var(--bg);
   background-color: var(--fg);
   font-weight: bold;
 }
 
-input[type="checkbox"]:after {
+input[type="checkbox"]:after,
+input[type="radio"]:after {
   display: inline-flex;
   content: " ";
   justify-content: center;
@@ -224,6 +230,10 @@ input[type="checkbox"]:after {
 
 input[type="checkbox"]:checked:after {
   content: "x";
+}
+
+input[type="radio"]:checked:after {
+  content: "•";
 }
 
 fieldset {
