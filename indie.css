@@ -203,7 +203,8 @@ input[type="radio"] {
   height: 1.5em;
   border: .1rem solid var(--fg);
   border-radius: var(--radius);
-  margin: 0px 0.25em;
+  margin: 0 0;
+  padding: 0 0;
   position: relative;
 }
 
@@ -218,22 +219,18 @@ input[type="radio"]:checked {
   font-weight: bold;
 }
 
-input[type="checkbox"]:after,
-input[type="radio"]:after {
-  display: inline-flex;
-  content: " ";
-  justify-content: center;
-  align-items: center;
-  width: 1.25em;
-  height: 1.25em;
+input[type="checkbox"]::after,
+input[type="radio"]::after {
+  content: "";
+  display: block;
+  width: 0.8em;
+  height: 0.8em;
+  border-radius: 50%;
 }
 
-input[type="checkbox"]:checked:after {
-  content: "x";
-}
-
-input[type="radio"]:checked:after {
-  content: "•";
+input[type="checkbox"]:checked::after,
+input[type="radio"]:checked::after {
+  background: var(--bg);
 }
 
 fieldset {
